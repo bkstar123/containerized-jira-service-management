@@ -12,7 +12,7 @@ services:
       - jirasm_network
 
   jira:
-    image: bkstar123/jira-service-management:${JIRASM_VERSION:-latest}
+    image: bkstar123/jira-service-management:${JIRASM_VERSION:-10.6.1}
     container_name: jirasm
     restart: unless-stopped
     ports:

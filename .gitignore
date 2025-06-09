@@ -29,7 +29,3 @@ pids/
 *.pid
 *.seed
 *.pid.lock 
-
-# Installation files
-*.tar.gz
-*.tgz

@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk-slim
+FROM eclipse-temurin:21-jdk-jammy
 
 ENV JIRA_HOME /var/atlassian/application-data/jira
 ENV JIRA_INSTALL /opt/atlassian/jira
