@@ -5,8 +5,8 @@ ENV JIRA_INSTALL /opt/atlassian/jira
 
 RUN apt-get update && apt-get install -y curl tar
 
-# Tải JSM bản 5.12.2
-ADD https://product-downloads.atlassian.com/software/jira/downloads/atlassian-jira-servicedesk-5.12.2.tar.gz /tmp/jira.tar.gz
+# Copy JSM bản 10.6.1
+COPY atlassian-servicedesk-10.6.1.tar.gz /tmp/jira.tar.gz
 
 RUN mkdir -p ${JIRA_INSTALL} && \
     tar -xzf /tmp/jira.tar.gz -C /opt/atlassian && \
