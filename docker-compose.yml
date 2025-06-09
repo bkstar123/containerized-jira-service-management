@@ -12,7 +12,7 @@ services:
       - jirasm_network
 
   jira:
-    image: atlassian/jira-service-management:${JIRASM_VERSION:-latest}
+    build: .
     container_name: jirasm
     restart: unless-stopped
     ports:
