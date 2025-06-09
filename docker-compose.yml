@@ -30,7 +30,7 @@ services:
 
 volumes:
   jirasm_postgres_data:
-  jira_data:
+  jirasm_data:
 
 networks:
   jirasm_network:
